@@ -40,7 +40,7 @@ An isolated Active Directory environment built from scratch to practice both att
 |--------|------|----------------------|-------|
 | Recon / port scan | nmap | — (intentionally quiet) | Pure recon barely touches Windows logs — documented as a detection gap |
 | Password spray | NetExec | **4625** burst + **4624** success | Found the seeded weak account from a wall of failures |
-| Kerberoasting | Impacket + hashcat | **4769** RC4 (`0x17`) | Cracked a service-account password offline from rockyou |
+| Kerberoasting | Impacket + hashcat | **4769** RC4 (`0x17`) | Cracked a service-account password offline |
 | AD enumeration | BloodHound | **4624** NTLM logon burst | LDAP enum was quiet on 4662; pivoted to the NTLM auth burst instead |
 
 Full detail with screenshots and Splunk queries lives in [`detections/`](./detections) and [`docs/04-attacks-detect.md`](./docs/04-attacks-detect.md).
@@ -56,5 +56,5 @@ Full detail with screenshots and Splunk queries lives in [`detections/`](./detec
 
 ---
 
-Skills demonstrated: Active Directory (Server 2022, DNS, DHCP, GPO) · Splunk SIEM engineering and log onboarding · detection writing by Windows Event ID (4625, 4769, 4624) · offensive tooling (NetExec, Impacket, hashcat, BloodHound) · MITRE ATT&CK mapping
+Skills demonstrated: Active Directory (Server 2022, DNS, DHCP, GPO) · Splunk SIEM engineering and log onboarding · detection writing by Windows Event ID (4625, 4769, 4624) · offensive tooling (NetExec, Impacket, hashcat, BloodHound) 
 
