@@ -29,7 +29,7 @@ This is the one that makes detection possible. Computer Configuration → Polici
 gpupdate /force
 ```
 
-Verified with the banner appearing at login and `gpresult /r` listing both GPOs under "Applied Group Policy Objects."
+Verified with the banner appearing at login and `gpresult /r` listing both GPOs under "Linked Group Policy Objects."
 
 ![GPO overview](../screenshots/GPO-Overview.png)
 
