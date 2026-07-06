@@ -43,7 +43,7 @@ An isolated Active Directory environment built from scratch to practice both att
 | Kerberoasting | Impacket + hashcat | **4769** RC4 (`0x17`) | Cracked a service-account password offline |
 | AD enumeration | BloodHound | **4624** NTLM logon burst | LDAP enum was quiet on 4662; pivoted to the NTLM auth burst instead |
 
-Full detail with screenshots and Splunk queries lives in [`detections/`](./detections) and [`docs/04-attacks-detect.md`](./docs/04-attacks-detect.md).
+Full detail with screenshots and Splunk queries lives in [`detections/`](./detections) and [`docs/04-attacks-detect.md`](./docs/04-attack-detection.md).
 
 
 ## Documentation
@@ -51,7 +51,7 @@ Full detail with screenshots and Splunk queries lives in [`detections/`](./detec
 - [`docs/01-build.md`](./docs/01-build.md) — DC promotion, domain population, WIN11 join
 - [`docs/02-group-policy.md`](./docs/02-group-policy.md) — logon banner + audit policy
 - [`docs/03-siem.md`](./docs/03-siem.md) — Splunk SIEM + Universal Forwarders
-- [`docs/04-attacks-detect.md`](./docs/04-attacks-detect.md) — the four attacks and their detections
+- [`docs/04-attacks-detect.md`](./docs/04-attack-detection.md) — the four attacks and their detections
 - [`detections/`](./detections) — per-attack detection write-ups (query, Event ID, remediation)
 
 ---
